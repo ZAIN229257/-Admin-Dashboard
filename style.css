@@ -1,0 +1,333 @@
+/* ==========================================================================
+   1. Variables & Global Styles 
+   ========================================================================== */
+:root {
+  --primary-blue: #1992d4;
+  --primary-blue-hover: #157bb3;
+  --light-blue: #33a8e8;
+}
+
+body {
+  margin: 0;
+  height: auto;
+}
+
+/* ==========================================================================
+   2. Main Layout Structure 
+   ========================================================================== */
+.min-grid-contener {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+}
+
+.big-boss {
+  background-color: #cecdcd;
+}
+
+/* ==========================================================================
+   3. Sidebar Section 
+   ========================================================================== */
+.sidebar {
+  background-color: #3c9eff;
+  display: flex;
+  flex-direction: column;
+  grid-row: 1 / 3;
+  height: 100%;
+  color: #ffffff;
+  gap: 70px;
+}
+
+.sidebar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0px;
+  font-size: 35px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.brand-icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  filter: brightness(0) invert(1);
+}
+
+.top-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 25px;
+  padding: 10px;
+}
+
+.bottom-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 25px;
+  padding: 10px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.sidebar-link span {
+  font-size: 1.5rem;
+}
+
+.user-avatar {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  filter: brightness(0) invert(1);
+}
+
+/* ==========================================================================
+   4. Header Section 
+   ========================================================================== */
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secnd-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 4.1 Search Bar */
+.search-style {
+  --searchButtonWidth: 75px;
+  width: 800px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-f {
+  border: 0;
+  margin: 0;
+  padding: 0.5rem calc(var(--searchButtonWidth) + 0.5rem) 0.5rem 0.5rem;
+  border-radius: 18px;
+  width: 100%;
+  background: #ddd;
+  -webkit-appearance: none;
+  font-size: 20px;
+}
+
+.search-f:focus {
+  outline: 0;
+  background: rgb(211, 207, 207);
+}
+
+.form-avatar {
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+}
+
+/* 4.2 User Profile info (داخل الهيدر) */
+.head-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.head-avatar {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+#Profil-pic {
+  height: 90px;
+  width: 90px;
+}
+
+.user-name {
+  font-size: 2rem;
+}
+
+.welcome-text {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+.user-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+/* 4.3 Header Buttons */
+.buttonn {
+  margin-right: 30px;
+}
+
+button {
+  background-color: #1992d4;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 1.5rem;
+  margin-right: 20px;
+  padding: 10px;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #157bb3;
+}
+
+/* ==========================================================================
+   5. Main Content Grids 
+   ========================================================================== */
+.tt {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 10px;
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
+.slid-p-l {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto 1fr;
+  height: auto;
+  gap: 20px;
+}
+
+.pp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  align-items: start;
+  column-gap: 30px;
+  grid-row: 1 / 2;
+  margin: 0;
+}
+
+.sss {
+  grid-column: 2/3;
+  padding: 0;
+  margin: 10px;
+}
+
+.p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.l {
+  margin-left: 30px;
+}
+
+/* ==========================================================================
+   6. Cards & Elements
+   ========================================================================== */
+/* 6.1 Project/Text Cards */
+.text {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  border: none solid black;
+  border-radius: 16px;
+  width: auto;
+  min-width: 350px;
+  max-width: 450px;
+  height: auto;
+  margin: 10px;
+  padding: 20px;
+  border-bottom: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.text p {
+  color: #615b5b;
+  font-size: 17px;
+}
+
+.buttons3 {
+  padding-top: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 6.2 Announcement Cards */
+.announcement-card {
+  background-color: #ffffff;
+  width: 350px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.announcement-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.announcement-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* 6.3 User Cards */
+.user {
+  background-color: #ffffff;
+  width: 350px;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  gap: 15px;
+}
+
+.users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 6.4 Typography  */
+h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.5rem;
+  color: #1e293b;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.5;
+}

@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="p.svg/" />
+  </head>
+  <body>
+    <!-- Main Grid Container Layout -->
+    <div class="min-grid-contener">
+      <!-- ==========================================================================
+         1. Sidebar Component (Navigation and Branding)
+         ========================================================================== -->
+      <div class="sidebar">
+        <!-- Top Navigation Links -->
+        <div class="top-links">
+          <h2 class="sidebar-brand">
+            <img
+              src="p.svg/view-dashboard.svg"
+              class="brand-icon"
+              alt="Dashboard"
+            />
+            <span>Dashboard</span>
+          </h2>
+          <a href="" class="sidebar-link">
+            <img src="p.svg/home-circle.svg" alt="Home" class="user-avatar" />
+            <span>Home</span>
+          </a>
+          <a href="" class="sidebar-link">
+            <img src="p.svg/account.svg" alt="Profile" class="user-avatar" />
+            <span>Profil</span>
+          </a>
+          <a href="" class="sidebar-link">
+            <img
+              src="p.svg/message-reply-text-outline.svg"
+              alt="Messages"
+              class="user-avatar"
+            />
+            <span>Messages</span>
+          </a>
+          <a href="" class="sidebar-link">
+            <img src="p.svg/history.svg" alt="History" class="user-avatar" />
+            <span>History</span>
+          </a>
+          <a href="" class="sidebar-link">
+            <img
+              src="p.svg/file-multiple-outline.svg"
+              alt="Tasks"
+              class="user-avatar"
+            />
+            <span>Tasks</span>
+          </a>
+          <a href="" class="sidebar-link">
+            <img
+              src="p.svg/account-group.svg"
+              alt="Messages"
+              class="user-avatar"
+            />
+            <span>Communities</span>
+          </a>
+        </div>
+
+        <!-- Bottom Navigation Utilities -->
+        <div class="bottom-links">
+          <a href="" class="sidebar-link">
+            <img src="p.svg/cog.svg" alt="Settings" class="user-avatar" />
+            <span>Settings</span>
+          </a>
+          <a href="" class="sidebar-link">
+            <img src="p.svg/face-agent.svg" alt="Support" class="user-avatar" />
+            <span>Support</span>
+          </a>
+          <a href="" class="sidebar-link">
+            <img
+              src="p.svg/shield-account.svg"
+              alt="Privacy"
+              class="user-avatar"
+            />
+            <span>Privacy</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- ==========================================================================
+         2. Header Component (Search, User Actions & Greeting)
+         ========================================================================== -->
+      <div class="header">
+        <!-- Header Row 1: Search Form and Top Right Profile -->
+        <div class="first-row">
+          <form action="" method="get" class="search-style">
+            <img src="p.svg/magnify.svg" alt="Support" class="form-avatar" />
+            <label for="site-search"></label>
+            <input
+              type="search"
+              class="search-f"
+              id="site-search"
+              name="q"
+              placeholder="search"
+            />
+          </form>
+          <div class="head-info">
+            <a href="" class="sidebar-link">
+              <img
+                src="p.svg/bell-ring-outline.svg"
+                alt="Privacy"
+                class="head-avatar"
+              />
+            </a>
+            <img
+              id="Profil-pic"
+              src="p.svg/1b31a45f-bf63-48dd-99ca-dba2359aca62.jpg"
+              alt="Profil-pic"
+            />
+            <span class="user-name">Zizi zaza</span>
+          </div>
+        </div>
+
+        <!-- Header Row 2: User Avatar, Welcome Text & Dashboard Action Buttons -->
+        <div class="secnd-row">
+          <div class="p">
+            <img
+              id="Profil-pic"
+              src="p.svg/1b31a45f-bf63-48dd-99ca-dba2359aca62.jpg"
+              alt="Profil-pic"
+            />
+            <div class="user-text-wrapper">
+              <span class="welcome-text">Hi there,</span>
+              <samp class="user-name">Zizi zaza(@adw**)</samp>
+            </div>
+          </div>
+          <div class="buttonn">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================================================
+         3. Main Content Container (Dashboard Body Grid)
+         ========================================================================== -->
+      <div class="big-boss">
+        <!-- Main Component Titles -->
+        <div class="tt">
+          <h2 class="r">Your project</h2>
+          <h2 class="l">Your project</h2>
+        </div>
+
+        <!-- Double Column Split: Secondary Panels vs Main Feature Cards -->
+        <div class="slid-p-l">
+          <!-- Secondary Panels Column (Right Side Layout Group) -->
+          <div class="sss">
+            <!-- Announcements Component Card -->
+            <div class="announcement-card">
+              <div class="announcement-item">
+                <h3>Site Maintenance</h3>
+                <p>
+                  Vestibulum condimentum tellus lacus, in accumsan elit maximus
+                  ac. Donec hendrerit sodales congue...
+                </p>
+              </div>
+              <div class="announcement-item">
+                <h3>Community Share Day</h3>
+                <p>
+                  Nam vel lectus tincidunt, rutrum nulla eu, ornare libero.
+                  Aliquam dictum accumsan porttitor...
+                </p>
+              </div>
+              <div class="announcement-item">
+                <h3>Updated Privacy Policy</h3>
+                <p>
+                  Phasellus efficitur nisi eget elit consectetur, eget
+                  condimentum ante auctor. Cras fringilla sagittis sem in
+                  mattis...
+                </p>
+              </div>
+            </div>
+
+            <h2>Trending</h2>
+
+            <!-- Trending Active Users Component Card -->
+            <div class="user">
+              <div class="users">
+                <img
+                  id="Profil-pic"
+                  src="p.svg/1b31a45f-bf63-48dd-99ca-dba2359aca62.jpg"
+                  alt="Profil-pic"
+                />
+                <div class="user-text-wrapper">
+                  <span class="welcome-text">@morgen</span>
+                  <span class="user-name">world peace builder</span>
+                </div>
+              </div>
+
+              <div class="users">
+                <img
+                  id="Profil-pic"
+                  src="p.svg/1b31a45f-bf63-48dd-99ca-dba2359aca62.jpg"
+                  alt="Profil-pic"
+                />
+                <div class="user-text-wrapper">
+                  <span class="welcome-text">@morgen</span>
+                  <span class="user-name">world peace builder</span>
+                </div>
+              </div>
+
+              <div class="users">
+                <img
+                  id="Profil-pic"
+                  src="p.svg/1b31a45f-bf63-48dd-99ca-dba2359aca62.jpg"
+                  alt="Profil-pic"
+                />
+                <div class="user-text-wrapper">
+                  <span class="welcome-text">@morgen</span>
+                  <span class="user-name">world peace builder</span>
+                </div>
+              </div>
+
+              <div class="users">
+                <img
+                  id="Profil-pic"
+                  src="p.svg/1b31a45f-bf63-48dd-99ca-dba2359aca62.jpg"
+                  alt="Profil-pic"
+                />
+                <div class="user-text-wrapper">
+                  <span class="welcome-text">@morgen</span>
+                  <span class="user-name">world peace builder</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main Feature Cards Grid Area (Left Side Layout Group with exactly 6 Project Cards) -->
+          <div class="pp">
+            <!-- Project Card 1 -->
+            <div class="text">
+              <h3>Example 1</h3>
+              <p>
+                Choose your own fonts! The design example uses Roboto, which is
+                available with Google fonts. (You may want to review the More
+                Text Styles Lesson for information).
+              </p>
+              <div class="buttons3">
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="text">
+              <h3>Example 2</h3>
+              <p>
+                Choose your own fonts! The design example uses Roboto, which is
+                available with Google fonts. (You may want to review the More
+                Text Styles Lesson for information).
+              </p>
+              <div class="buttons3">
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="text">
+              <h3>Example 3</h3>
+              <p>
+                Choose your own fonts! The design example uses Roboto, which is
+                available with Google fonts. (You may want to review the More
+                Text Styles Lesson for information).
+              </p>
+              <div class="buttons3">
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+              </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="text">
+              <h3>Example 4</h3>
+              <p>
+                Choose your own fonts! The design example uses Roboto, which is
+                available with Google fonts. (You may want to review the More
+                Text Styles Lesson for information).
+              </p>
+              <div class="buttons3">
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+              </div>
+            </div>
+            <!-- Project Card 5 -->
+            <div class="text">
+              <h3>Example 5</h3>
+              <p>
+                Choose your own fonts! The design example uses Roboto, which is
+                available with Google fonts. (You may want to review the More
+                Text Styles Lesson for information).
+              </p>
+              <div class="buttons3">
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+              </div>
+            </div>
+            <!-- Project Card 6 -->
+            <div class="text">
+              <h3>Example 6</h3>
+              <p>
+                Choose your own fonts! The design example uses Roboto, which is
+                available with Google fonts. (You may want to review the More
+                Text Styles Lesson for information).
+              </p>
+              <div class="buttons3">
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+                <a href="" class="sidebar-link"
+                  ><img
+                    src="p.svg/bell-ring-outline.svg"
+                    alt="Privacy"
+                    class="head-avatar"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
